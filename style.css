@@ -1,0 +1,109 @@
+/* general section  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Saira', sans-serif;
+}
+
+.guitars {
+    height: 90vh;
+}
+
+.guitar {
+    height: 66vh;
+}
+
+.guitar,
+.guitars {
+    width: 66%;
+    margin: 0 auto;
+    box-shadow: #26394d 0 2em 3em 0;
+}
+
+
+/* images section */
+
+.image {
+    position: relative;
+    height: 100%;
+}
+
+.image0,
+.image1,
+.image2,
+.image3,
+.image4,
+.image5 {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.image0 {
+    background-image: url("images/guitars.jpg");
+}
+
+.image1 {
+    background-image: url("images/fender.jpg");
+}
+
+.image2 {
+    background-image: url("images/gibson.jpg");
+}
+
+.image3 {
+    background-image: url("images/ibanez.jpg");
+}
+
+.image4 {
+    background-image: url("images/takamine.jpg");
+}
+
+.image5 {
+    background-image: url("images/yamaha.jpg");
+}
+
+
+/* text section */
+
+.title {
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    transition-duration: 0.33s;
+    font-size: 3em;
+    border-radius: 0.25em;
+    padding: 0em 0.5em;
+}
+
+.title:hover {
+    background-color: #79614e;
+    color: #fff;
+}
+
+.content {
+    position: relative;
+    height: 25%;
+    margin: 10em auto 1em auto;
+    width: 66%;
+    color: #555555;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.75em;
+}
+
+.article {
+    text-align: justify;
+    text-indent: 4em;
+    font-size: 1em;
+    padding-top: 0.5em;
+}
