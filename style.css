@@ -7,6 +7,49 @@
 
 body {
     font-family: 'Saira', sans-serif;
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .brands {
+        margin: 0;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .brands {
+        margin: 0 4em;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .brands {
+        margin: 0 6em;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .brands {
+        margin: 0 8em;
+    }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .brands {
+        margin: 0 10em;
+    }
+}
+
+.guitar,
+.guitars {
+    margin: 0 auto;
+    box-shadow: #26394d 0 2em 3em 0;
 }
 
 .guitars {
@@ -17,27 +60,12 @@ body {
     height: 66vh;
 }
 
-.guitar,
-.guitars {
-    width: 66%;
-    margin: 0 auto;
-    box-shadow: #26394d 0 2em 3em 0;
-}
-
-
 /* images section */
 
 .image {
-    position: relative;
+    display: flex;
+    align-items: center;
     height: 100%;
-}
-
-.image0,
-.image1,
-.image2,
-.image3,
-.image4,
-.image5 {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -67,20 +95,17 @@ body {
     background-image: url("images/yamaha.jpg");
 }
 
-
 /* text section */
 
 .title {
-    position: absolute;
     background-color: #fff;
     color: #000;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%, -50%);
     transition-duration: 0.33s;
-    font-size: 3em;
+    font-size: 2em;
     border-radius: 0.25em;
-    padding: 0em 0.5em;
+    padding: 0 0.5em;
+    margin-left: -1em;
+    text-decoration: none;
 }
 
 .title:hover {
@@ -90,9 +115,7 @@ body {
 
 .content {
     position: relative;
-    height: 25%;
     margin: 10em auto 1em auto;
-    width: 66%;
     color: #555555;
 }
 
